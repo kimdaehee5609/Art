@@ -1,28 +1,30 @@
 %	------------------------------------------------------------------------------
 %
+%		화가
 %
-%	`	미술
-%
-%		2022년
-%		08월
-%		12일
-%		금요일 
-%		첫 작성
+%		작성  : 
+%		2022년 
+%		8월 
+%		12일 
+%		금요일
+%		첫 작업
 %
 %
 
 %	\documentclass[25pt, a1paper]{tikzposter}
 %	\documentclass[25pt, a0paper, landscape]{tikzposter}
-%	\documentclass[25pt, a1paper ]{tikzposter}
+%	\documentclass[20pt, a1paper ]{tikzposter}
 	\documentclass[	20pt, 
-							a1paper, 
-							portrait, %
+							a0paper, 
+%							portrait, %
+							landscape, %
 							margin=0mm, %
-							innermargin=10mm,  		%
-%							blockverticalspace=4mm, %
+							innermargin=4mm,  		%
+							blockverticalspace=4mm, %
 							colspace=5mm, 
 							subcolspace=0mm
 							]{tikzposter}
+
 
 
 %	\documentclass[25pt, a1paper]{tikzposter}
@@ -91,13 +93,11 @@
 
 %	------------------------------------------------------------------------------ 제목
 
-	\title{미술}
+	\title{ 화가 }
 
-	\author{ 		작성 : 2022년 8월 12일 금요일 \\
-				수정 : 2022년 8월 12일 금요일  }
+	\author{ 	작성 : 2022년 8월 12일 금요일\\
+			수정 : 2022년 8월 12일 금요일 }
 
-%	\institute{서영엔지니어링}
-%	\titlegraphic{\includegraphics[width=7cm]{IMG_1934}}
 
 	%% Optional title graphic
 	%\titlegraphic{\includegraphics[width=7cm]{IMG_1934}}
@@ -106,70 +106,55 @@
 
 \begin{document}
 
-	\maketitle
+
+	\maketitle[
+					width=841mm,
+					linewidth = 2mm,
+					innersep=4mm,
+%					titletotopverticalspace=0mm, %
+%					titletoblockverticalspace=0mm, %
+					titletextscale =4, 
+				]
+
+		%		a0  841 - 1189
+		%		a1  594 - 841
+		%		a2  420 - 594
+
+
 
 	\begin{columns}
 
-		\column{0.5}
+		\column{0.2}
 
-%	------------------------------------------------------------------------------ 미술
-			\block{■  미술  }
+%	------------------------------------------------------------------------------ 화가
+			\block{■  한국 화가 }
 			{
-					\setlength{\leftmargini}{7em}
-					\setlength{\labelsep} {1em}
+%					\setlength{\leftmargini}{7em}
+%					\setlength{\labelsep} {1em}
 				\begin{LARGE}
 					\begin{itemize}
+					\item 
 					\item 
 					\item 
 					\item 
 					\end{itemize}
 				\end{LARGE}
 			}
-
-
-%	------------------------------------------------------------------------------ 분야
-			\block{■  분야  }
-			{
-					\setlength{\leftmargini}{7em}
-					\setlength{\labelsep} {1em}
-				\begin{LARGE}
-					\begin{itemize}
-					\item 수채화
-					\item 
-					\item 
-					\end{itemize}
-				\end{LARGE}
-			}
-
-
-%	------------------------------------------------------------------------------ 재료
-			\block{■  재료  }
-			{
-					\setlength{\leftmargini}{7em}
-					\setlength{\labelsep} {1em}
-				\begin{LARGE}
-					\begin{itemize}
-					\item 물감
-					\item 붓
-					\item 
-					\end{itemize}
-				\end{LARGE}
-			}
-
-
 
 
 
 	%	====== ====== ====== ====== ====== 
-		\column{0.5}
+		\column{0.2}
 
-
-%	------------------------------------------------------------------------------ 한국
-			\block{■  한국}
+%	------------------------------------------------------------------------------ 화가
+			\block{■  한국 화가 }
 			{
+%					\setlength{\leftmargini}{7em}
+%					\setlength{\labelsep} {1em}
 				\begin{LARGE}
 					\begin{itemize}
-					\item 장승엽
+					\item 
+					\item 
 					\item 
 					\item 
 					\end{itemize}
@@ -177,12 +162,18 @@
 			}
 
 
+	%	====== ====== ====== ====== ====== 
+		\column{0.2}
 
-%	------------------------------------------------------------------------------ 프랑스
-			\block{■  프랑스 }
+
+%	------------------------------------------------------------------------------ 화가
+			\block{■  한국 화가 }
 			{
+%					\setlength{\leftmargini}{7em}
+%					\setlength{\labelsep} {1em}
 				\begin{LARGE}
 					\begin{itemize}
+					\item 
 					\item 
 					\item 
 					\item 
@@ -190,6 +181,44 @@
 				\end{LARGE}
 			}
 
+
+	%	====== ====== ====== ====== ====== 
+		\column{0.2}
+
+%	------------------------------------------------------------------------------ 화가
+			\block{■  한국 화가 }
+			{
+%					\setlength{\leftmargini}{7em}
+%					\setlength{\labelsep} {1em}
+				\begin{LARGE}
+					\begin{itemize}
+					\item 
+					\item 
+					\item 
+					\item 
+					\end{itemize}
+				\end{LARGE}
+			}
+
+	%	====== ====== ====== ====== ====== 
+		\column{0.2}
+
+%	------------------------------------------------------------------------------ 화가
+			\block{■  한국 화가 }
+			{
+%					\setlength{\leftmargini}{7em}
+%					\setlength{\labelsep} {1em}
+				\begin{LARGE}
+					\begin{itemize}
+					\item 
+					\item 
+					\item 
+					\item 
+					\end{itemize}
+				\end{LARGE}
+				파일 : Art
+
+			}
 
 
 	\end{columns}
