@@ -1,0 +1,718 @@
+%	-------------------------------------------------------------------------------
+%
+%	2020년 6월 30일 첫 작
+%
+%
+%
+%
+%
+%
+%	-------------------------------------------------------------------------------
+
+%\documentclass[10pt,xcolor=pdftex,dvipsnames,table]{beamer}
+%\documentclass[10pt,blue,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%\documentclass[14pt,blue,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+\documentclass[aspectratio=1610,17pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+
+		% Font Size
+		%	default font size : 11 pt
+		%	8,9,10,11,12,14,17,20
+		%
+		% 	put frame titles 
+		% 		1) 	slideatop
+		%		2) 	slide centered
+		%
+		%	navigation bar
+		% 		1)	compress
+		%		2)	uncompressed
+		%
+		%	Color
+		%		1) blue
+		%		2) red
+		%		3) brown
+		%		4) black and white	
+		%
+		%	Output
+		%		1)  	[default]	
+		%		2)	[handout]		for PDF handouts
+		%		3) 	[trans]		for PDF transparency
+		%		4)	[notes=hide/show/only]
+
+		%	Text and Math Font
+		% 		1)	[sans]
+		% 		2)	[sefif]
+		%		3) 	[mathsans]
+		%		4)	[mathserif]
+
+
+		%	---------------------------------------------------------	
+		%	슬라이드 크기 설정 ( 128mm X 96mm )
+		%	---------------------------------------------------------	
+%			\setbeamersize{text margin left=2mm}
+%			\setbeamersize{text margin right=2mm}
+
+	%	========================================================== 	Package
+		\usepackage{kotex}						% 한글 사용
+		\usepackage{amssymb,amsfonts,amsmath}	% 수학 수식 사용
+		\usepackage{color}					%
+		\usepackage{colortbl}					%
+
+
+	%		========================================================= 	note 옵션인 
+	%			\setbeameroption{show only notes}
+		
+
+	%		========================================================= 	Theme
+
+		%	---------------------------------------------------------	
+		%	전체 테마
+		%	---------------------------------------------------------	
+		%	테마 명명의 관례 : 도시 이름
+%			\usetheme{default}			%
+%			\usetheme{Madrid}    		%
+%			\usetheme{CambridgeUS}    	% -red, no navigation bar
+%			\usetheme{Antibes}			% -blueish, tree-like navigation bar
+
+		%	----------------- table of contents in sidebar
+			\usetheme{Berkeley}		% -blueish, table of contents in sidebar
+									% 개인적으로 마음에 듬
+
+%			\usetheme{Marburg}			% - sidebar on the right
+%			\usetheme{Hannover}		% 왼쪽에 마크
+%			\usetheme{Berlin}			% - navigation bar in the headline
+%			\usetheme{Szeged}			% - navigation bar in the headline, horizontal lines
+%			\usetheme{Malmoe}			% - section/subsection in the headline
+
+%			\usetheme{Singapore}
+%			\usetheme{Amsterdam}
+
+		%	---------------------------------------------------------	
+		%	색 테마
+		%	---------------------------------------------------------	
+%			\usecolortheme{albatross}	% 바탕 파란
+%			\usecolortheme{crane}		% 바탕 흰색
+%			\usecolortheme{beetle}		% 바탕 회색
+%			\usecolortheme{dove}		% 전체적으로 흰색
+%			\usecolortheme{fly}		% 전체적으로 회색
+%			\usecolortheme{seagull}	% 휜색
+%			\usecolortheme{wolverine}	& 제목이 노란색
+%			\usecolortheme{beaver}
+
+		%	---------------------------------------------------------	
+		%	Inner Color Theme 			내부 색 테마 ( 블록의 색 )
+		%	---------------------------------------------------------	
+
+%			\usecolortheme{rose}		% 흰색
+%			\usecolortheme{lily}		% 색 안 칠한다
+%			\usecolortheme{orchid} 	% 진하게
+
+		%	---------------------------------------------------------	
+		%	Outter Color Theme 		외부 색 테마 ( 머리말, 고리말, 사이드바 )
+		%	---------------------------------------------------------	
+
+%			\usecolortheme{whale}		% 진하다
+%			\usecolortheme{dolphin}	% 중간
+%			\usecolortheme{seahorse}	% 연하다
+
+		%	---------------------------------------------------------	
+		%	Font Theme 				폰트 테마
+		%	---------------------------------------------------------	
+%			\usfonttheme{default}		
+			\usefonttheme{serif}			
+%			\usefonttheme{structurebold}			
+%			\usefonttheme{structureitalicserif}			
+%			\usefonttheme{structuresmallcapsserif}			
+
+
+
+		%	---------------------------------------------------------	
+		%	Inner Theme 				
+		%	---------------------------------------------------------	
+
+%			\useinnertheme{default}
+			\useinnertheme{circles}		% 원문자			
+%			\useinnertheme{rectangles}		% 사각문자			
+%			\useinnertheme{rounded}			% 깨어짐
+%			\useinnertheme{inmargin}			
+
+
+
+
+		%	---------------------------------------------------------	
+		%	이동 단추 삭제
+		%	---------------------------------------------------------	
+%			\setbeamertemplate{navigation symbols}{}
+
+		%	---------------------------------------------------------	
+		%	문서 정보 표시 꼬리말 적용
+		%	---------------------------------------------------------	
+%			\useoutertheme{infolines}
+
+
+			
+	%	---------------------------------------------------------- 	배경이미지 지정
+%			\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bgimage}{./fig/Chrysanthemum.jpg}
+%			\setbeamertemplate{background canvas}{\pgfuseimage{bgimage}}
+
+		%	---------------------------------------------------------	
+		% 	본문 글꼴색 지정
+		%	---------------------------------------------------------	
+%			\setbeamercolor{normal text}{fg=purple}
+%			\setbeamercolor{normal text}{fg=red!80}	% 숫자는 투명도 표시
+
+
+		%	---------------------------------------------------------	
+		%	itemize 모양 설정
+		%	---------------------------------------------------------	
+%			\setbeamertemplate{items}[ball]
+%			\setbeamertemplate{items}[circle]
+%			\setbeamertemplate{items}[rectangle]
+
+
+
+
+
+
+		\setbeamercovered{dynamic}
+
+
+
+
+
+		% --------------------------------- 	문서 기본 사항 설정
+		\setcounter{secnumdepth}{5} 		% 문단 번호 깊이
+		\setcounter{tocdepth}{5} 			% 문단 번호 깊이
+
+
+
+
+% ------------------------------------------------------------------------------
+% Begin document (Content goes below)
+% ------------------------------------------------------------------------------
+	\begin{document}
+	
+
+			\title{중앙도서관 수채화}
+
+			\author{김대희}
+
+			\date{2020년 06월 30일}
+
+
+	%	==========================================================
+	%		개정 이력
+	%	----------------------------------------------------------
+	%	2020.06.30 첫 작성
+	%	----------------------------------------------------------
+	%	
+	%	----------------------------------------------------------
+
+
+	%	==========================================================
+	%
+	%	----------------------------------------------------------
+		\begin{frame}[plain]
+		\titlepage
+		\end{frame}
+
+
+
+%		\begin{frame} [plain]{목차}
+		\begin{frame} {목차}
+		\tableofcontents
+		\end{frame}
+		
+
+	%	========================================================== 	개요
+	%		Frame
+	%	----------------------------------------------------------
+		\part{개요}
+		\frame{\partpage}
+
+
+		\begin{frame} [plain]{목차}
+		\tableofcontents
+		\end{frame}
+		
+
+		
+				
+		
+	%	 ---------------------------------------------------------- 기본개요
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{기본 개요}
+%		\frame [plain] {\sectionpage}
+		
+
+		\begin{frame} [t,plain]
+			\begin{block} {기본 개요}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [강좌명]  
+				\item [시간]  매주 화요일
+				\item [장소]  소림사 소법당
+				\item [연락처]  010 7595 9475
+			\end{itemize}
+			
+			\end{block}
+		\end{frame}
+		
+
+
+
+	%	 ---------------------------------------------------------- 주요 내용
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{주요내용}
+%		\frame [plain] {\sectionpage}
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {주요 내용}
+			\begin{itemize}
+				\item 수채화 도구 사용법 이해
+				\item 색과 농도 기초 실습
+				\item 정물 및 꽃이 핀 풍경 그리기 연습
+				\item 자연 풍경 그리기 연습
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+
+	%	 ---------------------------------------------------------- 강사
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{강사}
+%		\frame [plain] {\sectionpage}
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {강사}
+			\begin{itemize}
+				\item 이종원
+				\item 부산대 사법대학 미술교육과 졸업
+				\item 미술1급 정교사
+				\item 현, 고등학교 미술 교사
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+
+	%	========================================================== 함께 읽어볼 자료
+		\part{ 함께 읽어볼 자료 }
+		\frame{\partpage}
+		
+		\begin{frame} [plain]{목차}
+		\tableofcontents%
+		\end{frame}
+
+
+
+
+	
+	
+
+
+	%	---------------------------------------------------------- 수채화로 그리는 꽃선물
+	%		Frame
+	%	----------------------------------------------------------
+		\section{수채화로 그리는 꽃 선물 }
+		\begin{frame} [t,plain]
+		\frametitle{수채화로 그리는 꽃 선물 }
+			\begin{block} {수채화로 그리는 꽃 선물 }
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 수채화로 그리는 꽃 선물 \\: Watercolor guide book 기법서	
+				\item [지은이] 박송연 지음	
+				\item [출판사] EJONG(이종)	
+				\item [중앙] 651-84 		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+	%	---------------------------------------------------------- 수채화 원데이 클래스
+	%		Frame
+	%	----------------------------------------------------------
+	
+		\section{수채화 원데이 클래스}
+		\begin{frame} [t,plain]
+		\frametitle{수채화 원데이 클래스: 나의 첫 감성 수채화 노트} 	
+			\begin{block} {수채화 원데이 클래스\\: 나의 첫 감성 수채화 노트} 	
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 수채화 원데이 클래스\\: 나의 첫 감성 수채화 노트
+				\item [지은이] 백초윤 지음	
+				\item [출판사] 경향비피	
+				\item [중앙] 652.52-23		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+
+		\section{수채화 그리기 좋은 날 }	
+		\begin{frame} [t,plain]
+		\frametitle{수채화 그리기 좋은 날 : 13명의 작가와 함께하는 수채화 수업}	
+			\begin{block} {수채화 그리기 좋은 날 \\: 13명의 작가와 함께하는 수채화 수업}	
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 수채화 그리기 좋은 날 : 13명의 작가와 함께하는 수채화 수업
+				\item [지은이] 이명선 외 지음	
+				\item [출판사] 경향비피	
+				\item [중앙] 652.52-27 		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+ 	
+		\section{나도 수채화 잘 그리면 소원이 없겠네 }
+		\begin{frame} [t,plain]
+		\frametitle{나도 수채화 잘 그리면 소원이 없겠네 : 도구 사용법부터 꽃 그리기까지, 초보자를 위한 4주 클래스}
+			\begin{block} {나도 수채화 잘 그리면 소원이 없겠네 \\: 도구 사용법부터 꽃 그리기까지, 초보자를 위한 4주 클래스}
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 나도 수채화 잘 그리면 소원이 없겠네 : 도구 사용법부터 꽃 그리기까지, 초보자를 위한 4주 클래스
+				\item [지은이] 차유정	
+				\item [출판사] 한빛라이프	
+				\item [중앙] 652.52-28		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+	
+
+		\section{ 나만의 수채화 교실	}
+		\begin{frame} [t,plain]
+		\frametitle{(매일 매일 행복을 느끼게 하는) 나만의 수채화 교실	}
+			\begin{block} {(매일 매일 행복을 느끼게 하는) 나만의 수채화 교실	}
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] (매일 매일 행복을 느끼게 하는) 나만의 수채화 교실	
+				\item [지은이] 윈저 지음	
+				\item [출판사] 도도	
+				\item [중앙] 652.52-29 		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+		\section{오늘 본 수채화 풍경 }
+		\begin{frame} [t,plain]
+		\frametitle{오늘 본 수채화 풍경 : 7가지 기법으로 쉽게 그리는 30가지 풍경 수채화}
+			\begin{block} {오늘 본 수채화 풍경 : 7가지 기법으로 쉽게 그리는 30가지 풍경 수채화}
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 오늘 본 수채화 풍경 : 7가지 기법으로 쉽게 그리는 30가지 풍경 수채화
+				\item [지은이] 김소라	
+				\item [출판사] 책밥	
+				\item [중앙] 652.52-30		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+		
+
+		\section{(다시 시작하는) 수채화 기초 클래스}
+		\begin{frame} [t,plain]
+		\frametitle{(다시 시작하는) 수채화 기초 클래스}
+			\begin{block} {(다시 시작하는) 수채화 기초 클래스}
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] (다시 시작하는) 수채화 기초 클래스
+				\item [지은이] 이수경 지음	
+				\item [출판사] 이종	
+				\item [중앙] 652.52-35 		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+		\section{일러스트레이터 로사의 식물 수채화 가이드 }
+		\begin{frame} [t,plain]
+		\frametitle{물빛 보태니컬 가든 : 일러스트레이터 로사의 식물 수채화 가이드 }
+			\begin{block} {물빛 보태니컬 가든 : 일러스트레이터 로사의 식물 수채화 가이드 }
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 물빛 보태니컬 가든 : 일러스트레이터 로사의 식물 수채화 가이드 
+				\item [지은이] 로사 지음	
+				\item [출판사] 북핀	
+				\item [중앙] 652.52-36		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+		\section{	맛있는 수채화 일러스트레이션	}
+		\begin{frame} [t,plain]
+		\frametitle{	맛있는 수채화 일러스트레이션	}
+			\begin{block} {	맛있는 수채화 일러스트레이션	}
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 	맛있는 수채화 일러스트레이션	
+				\item [지은이] 정원재 저	
+				\item [출판사] 투데이북스	
+				\item [중앙] 657.5-18		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+	%	---------------------------------------------------------- 공양주보살
+	%		Frame
+	%	----------------------------------------------------------
+
+		\section{	(꼭 배우고 싶은) 수채화 캘리그라피	 }
+		\begin{frame} [t,plain]
+		\frametitle{	(꼭 배우고 싶은) 수채화 캘리그라피	 }
+			\begin{block} {	(꼭 배우고 싶은) 수채화 캘리그라피	 }
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item [제목] 	(꼭 배우고 싶은) 수채화 캘리그라피	 
+				\item [지은이] 이명선 외 7인 지음	
+				\item [출판사] 경향미디어	
+				\item [중앙] 658.31-15		
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame}						
+
+
+
+
+	%	========================================================== 강의 준비물
+		\part{강의 준비물}
+		\frame{\partpage}
+		
+		\begin{frame} [plain]{목차}
+		\tableofcontents%
+		\end{frame}
+		
+
+% ----------------------------------------------------------------------------- 강의 준비물
+%
+% -----------------------------------------------------------------------------
+	\section{강의 준비물 }
+	\frame [plain] {\sectionpage}
+
+
+	%	 ---------------------------------------------------------- 준비물
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{준비물}
+%		\frame [plain] {\sectionpage}
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {준비물}
+			\begin{itemize}
+				\item 물감
+				\item 파레트
+				\item 스케치북
+				\item 붓
+				\item 걸레
+				\item 연필
+				\item 지우개
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+	%	 ---------------------------------------------------------- 준비물
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{준비물}
+%		\frame [plain] {\sectionpage}
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {준비물}
+			\begin{itemize}
+				\item 물감
+				\item 파레트
+				\item 스케치북
+				\item 붓
+				\item 걸레
+				\item 연필
+				\item 지우개
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+% ----------------------------------------------------------------------------- 강의 준비물 : 붓
+%
+% -----------------------------------------------------------------------------
+	\section{강의 준비물 : 붓}
+	\frame [plain] {\sectionpage}
+
+
+	%	========================================================== 수업
+		\part{ 수업 }
+		\frame{\partpage}
+		
+		\begin{frame} [plain]{목차}
+		\tableofcontents%
+		\end{frame}
+
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 7월 04일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 7월 11일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 7월 18일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+	%	 ----------------------------------------------------------
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 7월 25일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+	%	 ---------------------------------------------------------- 8월
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 8월 01일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+	%	 ---------------------------------------------------------- 8월
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 8월 08일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+
+	%	 ---------------------------------------------------------- 8월
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 8월 15일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+	%	 ---------------------------------------------------------- 8월
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 8월 22일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+		
+	%	 ---------------------------------------------------------- 8월
+		\begin{frame} [t,plain]
+			\begin{block} {수업 : 2020년 8월 29일 토}
+
+			\setlength{\leftmargini}{5em}			
+			\begin{itemize}
+				\item [출석] 
+				\item [수업내용] 
+				\item [반성문] 
+			\end{itemize}
+			\end{block}
+		\end{frame}
+
+% ------------------------------------------------------------------------------ ------------------------------------------------------------------------------ ------------------------------------------------------------------------------
+% End document
+% ------------------------------------------------------------------------------ ------------------------------------------------------------------------------ ------------------------------------------------------------------------------
+\end{document}
+
+
+	%	----------------------------------------------------------
+	%		Frame
+	%	----------------------------------------------------------
+		\begin{frame} [c]
+%		\begin{frame} [b]
+%		\begin{frame} [t]
+		\frametitle{감리 보고서}
+		\end{frame}						
+
